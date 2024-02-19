@@ -3,7 +3,7 @@
 import * as z from 'zod'
 import { useForm } from "react-hook-form"
 import { CardWrapper } from "./card-wrapper"
-import { RegisterSchema } from '@/app/schemas'
+import { RegisterSchema } from '@/schemas'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '../ui/form'
 import { Input } from '../ui/input'
@@ -11,7 +11,8 @@ import { Button } from '../ui/button'
 import { FormError } from '../form-error'
 import { FormSuccess } from '../form-success'
 import { useState, useTransition } from 'react'
-import { register } from '@/app/actions/register'
+import { register } from '@/actions/register'
+
 
 export const RegisterForm = () => {
   const [isPending, startTransition] = useTransition()
