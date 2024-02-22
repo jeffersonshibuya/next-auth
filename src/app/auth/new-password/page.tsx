@@ -1,9 +1,9 @@
-// import { NewVerificationForm } from "@/components/auth/new-verification"
+import { NewPasswordForm } from "@/components/auth/new-password"
 
-// const NewPasswordPage = () => {
-//   return (
-//     <NewPasswordForm />
-//   )
-// }
+const NewPasswordPage = () => {
+  return (
+    <NewPasswordForm />
+  )
+}
 
-// export default NewPasswordPage
+export default NewPasswordPage
